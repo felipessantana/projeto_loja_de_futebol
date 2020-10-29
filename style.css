@@ -1,0 +1,103 @@
+p{
+    
+    color:white; 
+    
+    font-size: 40px; 
+    
+    font-family: Helvertica;
+
+}
+body{
+    background-color: white;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: green;
+    height: 100px;
+}
+
+article{
+    background-color;
+    min-height:100px ;
+    width: 40%; 
+    float: left; 
+
+}
+aside{
+    background-color:;
+    min-height: 200px; 
+    width:40%;
+    float: right;
+}
+
+footer{
+    clear: both;
+    background-color: green;
+    height: 20px;
+}
+
+h1{
+    color:black;
+    
+}
+#fundo{
+    clear: both;
+    background-image: url('fundo.png'); 
+    background-size: 100%; 
+    min-height:600px;
+    padding: 40px 0 0 0;
+}
+h2{
+ color:white;
+ 
+}
+#logo{
+    float: left;
+}
+form{
+    font-size: 20px;
+    background: #cccccc; 
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 5px 10px 10px 10px;
+}
+input, textarea{
+    width: 270px; 
+    padding: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }

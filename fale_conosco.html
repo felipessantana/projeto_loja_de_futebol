@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+   <ul>
+      <li><a  href="index.html">Home</a></li>
+      <li><a  href="produtos.html">Produtos</a></li>
+      <li><a href="covid19.html">COVID19</a></li>
+      <li style="float: right"><a class="active" href="fale_conosco.html">Fale Conosco</a></li>
+   </ul>
+   </head>
+<body>
+  <div id="fundo"><div> 
+  <br>
+  <br> 
+  <center>
+      <form method = "post" action ="agradecimento.html">
+    
+         <div>
+            <label>Nome:
+               <input name = "nome" type = "text" size = "25"
+                  maxlength = "30"  required="required" placeholder="Digite seu nome"/>
+            </label>
+         </div>
+         <div>
+            <label>
+               Endereço:
+               <input name = "Endereço" type = "text" size = "25"
+               maxlength = "30" required="required" placeholder="Digite o Logradouro" />
+            </label>
+         </div>
+         <div>   
+            <label>Complemento:
+               <input name = "Complemento" type = "text" size = "25"
+               maxlength = "30" required="required" placeholder="Digite o Complemento"/>
+            </label>
+         </div>
+         <div>
+            <label>Cidade:
+               <input name = "Cidade" type = "text" size = "25"
+               maxlength = "30" required="required" placeholder="Digite o Cidade" />
+            </label>
+         </div>
+         <div>
+            <label>Estado:
+               <input name = "Estado" type = "text" size = "25"
+               maxlength = "30" required="required" placeholder="Digite o Estado"/>
+            </label>
+         </div>
+         <div>
+            <label>CEP:
+               <input name = "CEP" type = "text" size = "25"
+               maxlength = "30" required="required" placeholder="Digite o caixa Postal "/>
+            </label>
+         </div>
+         <div>
+            <label>Telefone:
+                  <input name = "telefonedecontato" type = "text" size = "25"
+                  maxlength = "30" required pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" 
+                  placeholder="(xx) xxxxx-xxxx"/>
+            </label>
+      
+         </div>
+         <div>
+            <label>E-mail:
+                  <input name = "E-mail" type = "email" size = "25"
+                  maxlength = "30" required="required" placeholder="Digite seu E-mail"/>
+            </label>
+      
+         </div>
+         <select name="Sexo">
+            <option value="1"> Masculino</option>
+            <option value="2"> Feminino</option>
+        
+         </select>
+         <div>
+            <label>Mensagem:
+               <textarea name="mensagem" placeholder="Digite sua mensagem" 
+               required="required" cols="30" rows="5"></textarea>
+
+            </label>
+         </div>
+         <div id="f">
+                <input type="submit" value="Envia">
+                <input type = "reset" value = "Limpa Campos"/>
+         </div>
+      
+          
+    </form>
+   </center> 
+</body>
+</html>
