@@ -102,3 +102,46 @@ ul {
     background-color: #4CAF50;
   }
 
+  figure.foto-legendas{
+    position: relative;
+    box-shadow: -1px -1px -4px black ;
+    
+    
+}
+
+
+figure.foto-legendas img{
+    width: "300";
+    height:"215";
+  
+
+}
+figure.foto-legendas figcaption{
+    /* Legenda ficar opaca*/
+    opacity: 0;
+    /*Posiciona da legenda*/
+    position: absolute;
+    top: 0px;
+    /* adicionando uma cor de fundo no texto*/
+    background-color:rgba(51, 199, 191, 0.4);
+    /*mudando a cor da letra*/
+    color: white;
+    /*altura e largura do quadrado onde esta a legenda*/
+    width: 60%;
+    height: 100%;
+    left: 20%;
+    padding: 70px;
+    /* cirando um box dentro da a bordar para ficar ajustado a imagem*/
+    box-sizing: border-box;
+    /*Para a transação de opacidade demorar apenas um segundo quando passar o mouse por cima da imagem */
+    transition: opacity 1s;
+    text-align: center;
+    
+    
+    
+}
+figure.foto-legendas:hover figcaption{
+    /*hover cirara um efeito de quando passar o mouse por cima*/
+    opacity: 1;
+    
+}
