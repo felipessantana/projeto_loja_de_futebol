@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="formstyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
@@ -17,77 +18,77 @@
   <br>
   <br> 
   <center>
-      <form method = "post" action ="agradecimento.html">
-    
-         <div>
-            <label>Nome:
-               <input name = "nome" type = "text" size = "25"
-                  maxlength = "30"  required="required" placeholder="Digite seu nome"/>
-            </label>
-         </div>
-         <div>
-            <label>
-               Endereço:
-               <input name = "Endereço" type = "text" size = "25"
-               maxlength = "30" required="required" placeholder="Digite o Logradouro" />
-            </label>
-         </div>
-         <div>   
-            <label>Complemento:
-               <input name = "Complemento" type = "text" size = "25"
-               maxlength = "30" required="required" placeholder="Digite o Complemento"/>
-            </label>
-         </div>
-         <div>
-            <label>Cidade:
-               <input name = "Cidade" type = "text" size = "25"
-               maxlength = "30" required="required" placeholder="Digite o Cidade" />
-            </label>
-         </div>
-         <div>
-            <label>Estado:
-               <input name = "Estado" type = "text" size = "25"
-               maxlength = "30" required="required" placeholder="Digite o Estado"/>
-            </label>
-         </div>
-         <div>
-            <label>CEP:
-               <input name = "CEP" type = "text" size = "25"
-               maxlength = "30" required="required" placeholder="Digite o caixa Postal "/>
-            </label>
-         </div>
-         <div>
-            <label>Telefone:
-                  <input name = "telefonedecontato" type = "text" size = "25"
-                  maxlength = "30" required pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" 
-                  placeholder="(xx) xxxxx-xxxx"/>
-            </label>
-      
-         </div>
-         <div>
-            <label>E-mail:
-                  <input name = "E-mail" type = "email" size = "25"
-                  maxlength = "30" required="required" placeholder="Digite seu E-mail"/>
-            </label>
-      
-         </div>
-         <select name="Sexo">
-            <option value="1"> Masculino</option>
-            <option value="2"> Feminino</option>
-        
-         </select>
-         <div>
-            <label>Mensagem:
-               <textarea name="mensagem" placeholder="Digite sua mensagem" 
-               required="required" cols="30" rows="5"></textarea>
+      <form id="txt" method = "post" action ="agradecimento.html">
+         <fieldset id="usuario"><legend>Identificação do Usuario</legend>
+            <p>
+               <label for="cName">Nome: </label>
+               <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo">
+            </p>
+            <p>
+               <label for="cSenha">Senha: </label>
+               <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Digitos">
+            </p>
+            <p>
+               <label for="cMail">E-mail: </label>
+               <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="text@text.com">
+            </p>
+            <fieldset id="sexo"> <legend> Sexo:</legend>
+               <Input type="radio" name="tSexo" id="cMasc"> <label for="cMasc"> Masculino </label><br>
+               <Input type="radio" name="tSexo" id="cFem"> <label for="cFem"> Feminino </label>
+           </fieldset>
+           <p><label for="cNasc"> Data de Nascimento:</label>
+                <input type="date" name="tNasc" id="cNasc" </p>
+         </fieldset>
 
-            </label>
-         </div>
-         <div id="f">
-                <input type="submit" value="Envia">
-                <input type = "reset" value = "Limpa Campos"/>
-         </div>
-      
+         <fieldset id="endereco"><legend> Endereço do Usuario</legend>
+            <p><label for="cRua"> Logradouro:</label> 
+                <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trv" </p>
+            <p><label for="cNum"> Numero:</label> 
+                <input type="number" name="tNum" id="cNum" size="5" min="0" max="999999" </p>
+            <p><label for="cUf"> Estado:</label>
+                <select name="tEst" id="cUf">
+                    <optgroup label="Região Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="BA" selected>Bahia</option>
+                    </optgroup>
+                </select>  </p>
+            <p><label for="cCid"> Cidade:</label> 
+                <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades"> 
+                <datalist id="cidades">
+                    <option value="Rio de Janeiro"></option>
+                    <option value="São Paulo"></option>
+                    <option value="Salvador"></option>
+                </datalist>
+            </p>
+    </fieldset>         
+    <fieldset id="mensagem"><legend> Mensagem do Usuario</legend>
+        <p><label for="cUrg"> Grau de Urgencia</label>
+            Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max
+        </p>
+        <p><label for="cMsg"> Mensagem:</label>
+        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe sua mensagem"></textarea>
+        </p>
+    </fieldset>   
+    <fieldset id="pedido"><legend> Quero um Camisa</legend>
+        <p>
+            <input type="checkbox" name="tPed" id="cPed">
+            <label for="cPed"> Gostaria de adquirir um Camisa quando as disponivel</label></p>
+        <p>
+            <label for="cCor"> Cor:</label><input type="color" name="tCor" id="cCor" value="#0000ff"> 
+         </p>
+        <p><label for="cQtd"> Quantidade:</label>
+        <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"> </p>
+        <p><label for="cTot"> Preço Total: R$</label>
+        <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly>
+        </p>
+    </fieldset>    
+        <!-- <input type="submit"  value="Enviar"> -->
+        <input type="image" name="tEnviar" src="imagens/enviar.jgp">
+
           
     </form>
    </center> 
