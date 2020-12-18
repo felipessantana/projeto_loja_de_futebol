@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 form{
-    width: 500px;
+    width: 550px;
     margin: auto;
 }
 input, textarea{
@@ -23,25 +23,36 @@ fieldset{
     border-color: #cecece;
     margin: 20px;
     
+   
 }
 fieldset#sexo{
     width: 150px;
 }
 fieldset#usuario{
-    background: url("contato.jpg") no-repeat 100% 100%;
+    background: url("icone-contato.png") no-repeat 95% 95%;
+    background-color: #cecece;
     
     
 }
 fieldset#endereco{
-    background: url("/Imagens/endereco.jgp") no-repeat 95% 95%;
+    background: url("icone-endereco.png") no-repeat 95% 95%;
+    background-color: #cecece;
 }
 fieldset#mensagem{
-    background: url("Imagens/mensagem.jgp") no-repeat 95% 95%;
+    background: url("icone-mensagem.png") no-repeat 95% 95%;
+    background-color: #cecece;
 }
 fieldset#pedido{
-    background: url("/Imagens/pagamentos.jgp") no-repeat 95% 95%;
+    background: url("icone-pagamento.png") no-repeat 95% 95%;
+    background-color: #cecece;
 }
 form#txt p{
     font-size: 15pt;
    
+}
+p{
+    color:black;
+}
+legend{
+    color:red;
 }
