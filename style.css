@@ -48,7 +48,7 @@ h1{
 }
 #fundo{
     clear: both;
-    background-image: url('fundo.png'); 
+    background-image: url('imagens/fundo.png'); 
     background-size: 100%; 
     min-height:600px;
     padding: 40px 0 0 0;
@@ -139,5 +139,9 @@ figure.foto-legendas:hover figcaption{
 h3{
     margin-top: 50px;
     color: blue;
+    
+}
+/*              */
+div#fundo_index{
     
 }
