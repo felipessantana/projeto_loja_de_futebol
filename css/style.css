@@ -48,7 +48,7 @@ h1{
 }
 #fundo{
     clear: both;
-    background-image: url('../Imagens/fundo.png'); 
+    background-image: url('../fundo.png'); 
     background-size: 100%; 
     min-height:600px;
     padding: 40px 0 0 0;
